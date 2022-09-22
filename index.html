@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sneaker shooping cart</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img
+          class="logo"
+          src="https://turbologo.com/articles/wp-content/uploads/2019/11/puma-logo-cover.png" alt=""
+        />
+        <span class="title">Puma</span>
+        <a href="./index.html">Home</a>
+        <a href="./cart.html">Cart: <span id="cart">0</span></a>
+        <h2>Total: <span id="totalCart"></span></h2>
+    </nav>
+
+        <div class="heading">MENS SNEAKERS</div>
+        <br>
+       <section class="container">
+        <div class="row" id="productsPuma">
+            <div class="card">
+              <img
+                class="productImage"
+                src="https://www.kicksonfire.com/wp-content/uploads/2020/07/368783_02.jpg?x27993" alt=""
+              />
+              <div class="cardTitle"></div>
+              <div class="cardSize"></div>
+              <div class="cardPrice"></div>
+              <button class='cardButton' onclick="addCart()">Add to cart</button>
+            </div>
+            </div>
+          </section>
+          <br>
+          <hr>
+          <br>
+          <h1>Cart Items</h1>
+          <br><br>
+          
+          <section class="container">
+            <div class="row" id="cardCart">
+                <div class="card">
+                  <img
+                    class="productImage"
+                    src="https://www.kicksonfire.com/wp-content/uploads/2020/07/368783_02.jpg?x27993" alt=""
+                  />
+                  <div class="cardTitle"></div>
+                  <div class="cardSize"></div>
+                  <div class="cardPrice"></div>
+                  <button class='cardButton' onclick="removeCart()">RemoveCart</button>
+                </div>
+                </div>
+              </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
