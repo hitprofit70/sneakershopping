@@ -79,7 +79,7 @@ function cartMonitor() {
 }
 
       cart.innerHTML = countArray.length;
-      totalCart.innerHTML = `${totalPrice}`
+      totalCart.innerHTML = `R${totalPrice}`
 }
 
 function removeCart(i) {
